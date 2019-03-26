@@ -54,6 +54,7 @@ Vue + Vue-Route + axios + iview + vuex + less
 ### 备注
 ```
 代码在window整理没有很好的格式化，看着别扭的话，在webStorm通过eslint配合prettier格式化一下就好。
+好心求Star,嘻嘻。
 
 如有不周之处，希望大家不吝赐教。
 ```
