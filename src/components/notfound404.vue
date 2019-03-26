@@ -14,7 +14,7 @@ export default {
         sessionStorage.getItem("token") !== null &&
         sessionStorage.getItem("userType") !== null
       ) {
-        this.$router.push({ path: "/home" });
+        this.$router.push({ path: "/pagehome" });
       } else {
         this.$router.push({ path: "/login" });
       }
