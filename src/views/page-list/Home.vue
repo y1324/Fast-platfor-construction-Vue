@@ -26,9 +26,14 @@
                         </p>
                     </div>
                     <div class="information-top-box ">
-                        <h3>信息</h3><br>
-                        <span>演示主页：</span><a href="http://www.vygd.top/" target="_Blank" >http://www.vygd.top/</a>
-                        <p>github主页：</p>
+                         <h3>项目信息及其他信息</h3><br>
+                        <p>
+                            演示主页：
+                            <a href="http://www.vygd.top/" target="_Blank" >http://www.vygd.top/</a>
+                        </p><br>
+                        <p>
+                            github主页：<a href="https://github.com/y1324/Fast-platfor-construction">https://github.com/y1324/Fast-platfor-construction</a>
+                        </p><br>
                         <p>个人邮箱：4445748@qq.com</p>
                     </div>
                 </div>
