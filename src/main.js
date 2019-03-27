@@ -90,10 +90,10 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
-  // 已登录状态；当路由到login时，跳转至home
+  // 已登录状态；当路由到login时，跳转至PageHome
   if (to.name === "login") {
     if (isLogin) {
-      router.push({ name: "home" });
+      router.push({ name: "PageHome" });
     }
   }
 
