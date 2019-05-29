@@ -24,7 +24,7 @@
                                     <div class="inputBox inputBox-margin-top">
                                         <span class="inputName">令牌口令</span>
                                         <i class="material-icons">lock</i>
-                                        <input class="input-credential" maxlength="20" v-model="userInfo.password" type="password" @keyup.enter="certificateLoginClick" placeholder="请输入令牌口令"/>
+                                        <input class="input-credential" maxlength="20" v-model="userInfo.password" type="password" @keyup.enter="certificateLoginClick" placeholder="直接点击登录即可"/>
                                     </div>
                                     <Button class="login-button" :loading="loginLoading" @click="certificateLoginClick" type="primary">登&nbsp;&nbsp;&nbsp;&nbsp;录</Button>
                                 </div>
@@ -81,15 +81,13 @@
 
                     </div>
 
-                    <Button class="operation-platform-p" to="/operation/login" type="text">运营平台</Button>
 
                 </div>
 
-                <div class="loginRightBox">
-                    <div class="loginBG" ></div>
-                </div>
+
 
             </div>
+            <div class="recordNumber">备案号：<a href="http://www.miitbeian.gov.cn" target="_Blank"> 冀ICP备18023840号-1</a> 本网站用于开源项目经验学习分享等</div>
         </div>
     </div>
 </template>
@@ -210,7 +208,8 @@ export default {
   height: 100%;
   min-width: 1000px;
   min-height: 650px;
-  background-color: #f5f7fa;
+  /*background-color: #f5f7fa;*/
+  background: linear-gradient(blue, pink);
   position: relative;
   overflow: hidden;
 
@@ -229,21 +228,20 @@ export default {
     align-items: center;
 
     .loginBox {
-      width: 965px;
+      width: 370px;
       height: 600px;
       background-color: #ffffff;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 8px;
+      border-radius: 20px;
       box-shadow: 0px 2px 40px #888888;
 
       /*左侧样式*/
       .loginLeftBox {
         width: 370px;
         height: 600px;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
+        border-radius: 20px;
         background-color: #ffffff;
         z-index: 1;
         display: flex;
@@ -514,24 +512,15 @@ export default {
           margin-top: 10px;
         }
       }
-      /*右侧样式*/
-      .loginRightBox {
-        width: 595px;
-        height: 600px;
-        border-top-right-radius: 8px;
-        border-bottom-right-radius: 8px;
-        z-index: 1;
-        overflow: hidden;
+    }
 
-        .loginBG {
-          background: url(../../assets/img/login/loginBG.png) no-repeat;
-          width: 100%;
-          height: 100%;
-          background-size: cover;
-          -webkit-background-size: cover;
-          -o-background-size: cover;
-        }
-      }
+    .recordNumber{
+        width: 100%;
+        height: 30px;
+        display: inline-block;
+        position: fixed;
+        bottom: 10px;
+        text-align: center;
     }
   }
 }
